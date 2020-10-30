@@ -12,3 +12,8 @@ def test_subtract():
     
     assert result == 4
 
+def test_multiply():
+    calculator = Calculator()
+    result = calculator.multiply(2, 3)
+
+    assert result == 6
