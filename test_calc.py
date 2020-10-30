@@ -1,3 +1,5 @@
+import pytest
+
 from calculator import Calculator
 
 def test_add():
@@ -17,3 +19,9 @@ def test_multiply():
     result = calculator.multiply(2, 3)
 
     assert result == 6
+
+def test_divide():
+    calculator = Calculator()
+    result = calculator.divide(4, 2)
+
+    assert result == 2
