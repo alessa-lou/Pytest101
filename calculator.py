@@ -28,10 +28,11 @@ if __name__ == "__main__":
     while True:
         for i, operation in enumerate(operations, start=1):
             print(f"{i}: {operation.__name__}")
-            operation = input("Pick an operation: ")
-            if operation == "q":
-                sys.exit()
-            op = int(operation)
-            a = float(input("pick a number: "))
-            b = float(input("pick another number: "))
-            print(operations[op - 1](a, b))
+        print("q: quit")
+        operation = input("Pick an operation: ")
+        if operation == "q":
+            sys.exit()
+        op = int(operation)
+        a = float(input("pick a number: "))
+        b = float(input("pick another number: "))
+        print(operations[op - 1](a, b))
